@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+
+  <category>
+    <pattern>$OI #</pattern>
+    <template>Olá, como você <set name="topic">chama</set>?</template>
+  </category>
+  
+  <category>
+    <pattern>$OLÁ #</pattern>
+    <template>Olá, como você <set name="topic">chama</set>?</template>
+  </category>
+  
+  <category>
+    <pattern>$BOM DIA #</pattern>
+    <template>Olá, bom dia! Como você <set name="topic">chama</set>?</template>
+  </category>
+  
+    <category>
+    <pattern>$BOA TARDE #</pattern>
+    <template>Olá, boa tarde! Como você <set name="topic">chama</set>?</template>
+  </category>
+  
+    <category>
+    <pattern>$BOA NOITE #</pattern>
+    <template>Olá, boa noite! Como você <set name="topic">chama</set>?</template>
+  </category>
+<topic name="chama">
+  <category>
+    <pattern>*</pattern>
+    <template>Fala aí <set name="firstname"><star/></set>, como posso te ajudar?
+    <think><set name="topic">*</set></think>
+    </template>
+  </category>
+</topic>
+      
+  <category>
+    <pattern>COMO É MEU NOME #</pattern>
+    <template>
+     <random>
+      <li><get name="firstname"/>!</li>
+      <li>Seu nome é <get name="firstname"/></li>
+      <li>Tá esquecido hein <get name="firstname"/></li>
+     </random>
+    </template>
+  </category>
+  
+  <category>
+    <pattern>QUAL MEU NOME #</pattern>
+    <template>
+     <random>
+      <li><get name="firstname"/>!</li>
+      <li>Seu nome é <get name="firstname"/></li>
+      <li>Tá esquecido hein <get name="firstname"/></li>
+     </random>
+    </template>
+  </category>
+  
+  <category>
+    <pattern>COMO EU CHAMO #</pattern>
+    <template>
+     <random>
+      <li><get name="firstname"/>!</li>
+      <li>Seu nome é <get name="firstname"/></li>
+      <li>Tá esquecido hein <get name="firstname"/></li>
+     </random>
+    </template>
+  </category>
+    
+</aiml>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	
+	 <category>
+    <pattern>CONTE DE * ATÉ *</pattern>
+    <template>
+      <think><set name="count"><star index="1"/></set></think><get name="count"/>
+      <condition name="count">
+        <li><value><star index="2"/></value></li>
+        <li>
+          <set name="count"> <map><name>successor</name><get name="count"/></map>
+          </set> <loop/>
+        </li>
+      </condition>
+    </template>
+    </category>
+    
+   <category>
+    <pattern>CONTE DE * A *</pattern>
+    <template>
+      <think><set name="count"><star index="1"/></set></think><get name="count"/>
+      <condition name="count">
+        <li><value><star index="2"/></value></li>
+        <li>
+          <set name="count"> <map><name>successor</name><get name="count"/></map>
+          </set> <loop/>
+        </li>
+      </condition>
+    </template>
+    </category>
+    
+    <category>
+    <pattern>CONTE * ATÉ *</pattern>
+    <template>
+      <think><set name="count"><star index="1"/></set></think><get name="count"/>
+      <condition name="count">
+        <li><value><star index="2"/></value></li>
+        <li>
+          <set name="count"> <map><name>successor</name><get name="count"/></map>
+          </set> <loop/>
+        </li>
+      </condition>
+    </template>
+    </category>
+    
+    <category>
+    <pattern>CONTE * A *</pattern>
+    <template>
+      <think><set name="count"><star index="1"/></set></think><get name="count"/>
+      <condition name="count">
+        <li><value><star index="2"/></value></li>
+        <li>
+          <set name="count"> <map><name>successor</name><get name="count"/></map>
+          </set> <loop/>
+        </li>
+      </condition>
+    </template>
+    </category>
+    
+</aiml>

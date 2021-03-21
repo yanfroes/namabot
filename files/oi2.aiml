@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+  <category>
+    <pattern>MEU NOME É *</pattern>
+    <template>Fala aí <set name="firstname"><star/></set>, como posso te ajudar?</template>
+  </category>
+  
+  <category>
+    <pattern>COMO É MEU NOME #</pattern>
+    <template>
+     <random>
+      <li><get name="firstname"/>!</li>
+      <li>Seu nome é <get name="firstname"/></li>
+      <li>Tá esquecido hein <get name="firstname"/></li>
+     </random>
+    </template>
+  </category>
+  
+</aiml>

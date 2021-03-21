@@ -1,5 +1,7 @@
 ## Testes de Chatbot para vaga de Desenvolvedor Full Stack na empresa Nama (https://www.nama.ai/)
 
+O bot se chama Namabot e pode ser encontrado no Pandorabots (https://pandorabots.com/)
+
 * Basicamente o bot tem essa conversa:  
 * 1 - Da Oi e grava o nome da pessoa:  
 > you: Oi! (+ variações)  
